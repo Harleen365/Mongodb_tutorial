@@ -183,21 +183,7 @@ newdb> db.User.findOne()
   age: 19,
   class: 'g9'
 }
-newdb> db.User.findOne({66cebdd72fb98ab7642710c2})
-Uncaught:
-SyntaxError: Identifier directly after number. (1:19)
 
-> 1 | db.User.findOne({66cebdd72fb98ab7642710c2})
-    |                    ^
-  2 |
-
-newdb> db.User.findOne({'66cebdd72fb98ab7642710c2'})
-Uncaught:
-SyntaxError: Unexpected token (1:43)
-
-> 1 | db.User.findOne({'66cebdd72fb98ab7642710c2'})
-    |                                            ^
-  2 |
 
 newdb> db.User.findOne({_id: ObjectId('66cebdd72fb98ab7642710c2')})
 {
